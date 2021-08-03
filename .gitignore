@@ -1,6 +1,8 @@
 # SentEval data and .pyc files
-
-
+data/*
+!get_transfer_data.bash
+!tokenizer.sed
+!probing/
 
 # python
 __pycache__/
