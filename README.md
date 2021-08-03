@@ -1,3 +1,22 @@
+分散表現のダウンロード
+* glove
+    ```bash
+  mkdir -p data/embedding
+  cd data/embedding
+  curl -Lo glove.840B.300d.zip http://nlp.stanford.edu/data/glove.840B.300d.zip
+  unzip glove.840B.300d.zip
+  ```
+
+* fasttext
+  ```bash
+  mkdir -p data/fasttext
+  cd data/fasttext
+  curl -Lo crawl-300d-2M.vec.zip https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M.vec.zip
+  unzip crawl-300d-2M.vec.zip
+  ```
+
+---
+
 # SentEval: evaluation toolkit for sentence embeddings
 
 SentEval is a library for evaluating the quality of sentence embeddings. We assess their generalization power by using them as features on a broad and diverse set of "transfer" tasks. **SentEval currently includes 17 downstream tasks**. We also include a suite of **10 probing tasks** which evaluate what linguistic properties are encoded in sentence embeddings. Our goal is to ease the study and the development of general-purpose fixed-size sentence representations.
